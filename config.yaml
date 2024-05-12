@@ -1,0 +1,27 @@
+model_list:
+  - model_name: gpt-4
+    litellm_params:
+      model: gpt-4
+      api_base: https://ipin-copilot.onrender.com
+      custom_llm_provider: openai
+- model_name: gpt-4-turbo
+    litellm_params:
+      model: gpt-4-turbo
+      api_base: https://ipin-copilot.onrender.com
+      custom_llm_provider: openai
+- model_name: gpt-3.5-turbo
+    litellm_params:
+      model: gpt-3.5-turbo
+      api_base: https://ipin-copilot.onrender.com
+      custom_llm_provider: openai
+- model_name: text-embedding-ada-002
+    litellm_params:
+      model: text-embedding-ada-002
+      api_base: https://ipin-copilot.onrender.com
+      custom_llm_provider: openai
+- model_name: text-embedding-3-large
+    litellm_params:
+      model: text-embedding-3-large
+      api_base: https://ipin-copilot.onrender.com
+      custom_llm_provider: openai
+      
