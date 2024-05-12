@@ -1,6 +1,11 @@
-FROM ghcr.io/berriai/litellm:main-latest
+# Use an official Python runtime as a parent image
+FROM python:3.10-slim-buster
+
+# Set the working directory in the container to /app
 WORKDIR /app
-COPY config.yaml .
-RUN chmod +x entrypoint.sh
-EXPOSE 4000/tcp
-CMD ["--port", "4000"]
+
+# Install litellm
+RUN pip install litellm
+
+# Run litellm when the container launches
+CMD ["litellm"]
