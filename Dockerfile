@@ -6,6 +6,7 @@ WORKDIR /app
 
 # Install litellm
 RUN pip install litellm
+RUN pip install litellm[proxy]
 
 # Run litellm when the container launches
 CMD ["litellm"]
