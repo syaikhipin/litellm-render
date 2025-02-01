@@ -1,5 +1,5 @@
 # Use the provided base image
-FROM ghcr.io/berriai/litellm:latest
+FROM ghcr.io/berriai/litellm:main-latest
 
 # Set the working directory to /app
 WORKDIR /app
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY config.yaml .
 
 # Make sure your docker/entrypoint.sh is executable
-#RUN chmod +x ./docker/entrypoint.sh
+RUN chmod +x ./docker/entrypoint.sh
 
 # Expose the necessary port
 EXPOSE 4000/tcp
