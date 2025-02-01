@@ -8,7 +8,7 @@ WORKDIR /app
 COPY config.yaml .
 
 # Make sure your docker/entrypoint.sh is executable
-RUN chmod +x ./docker/entrypoint.sh
+#RUN chmod +x ./docker/entrypoint.sh
 
 # Expose the necessary port
 EXPOSE 4000/tcp
