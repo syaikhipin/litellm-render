@@ -1,9 +1,14 @@
 model_list:
-  # Existing example
-  - model_name: DeepSeek-R1
+  # Updated model list
+  - model_name: DeepSeek-R1-0528
     litellm_params:
-      model: huggingface/deepseek-ai/DeepSeek-R1
-      api_key: os.environ/HUGGINGFACE_API_KEY
+      model: openai/deepseek-ai/DeepSeek-R1-0528
+      api_base: os.environ/FEATHERLESS_API_BASE_CUSTOM
+      api_key: os.environ/FEATHERLESS_API_KEY_CUSTOM
+      timeout: 60
+      num_retries: 2
+      rpm: 60
+      tpm: 60000
   
   - model_name: claude-sonnet-4-20250514
     litellm_params:
@@ -30,6 +35,16 @@ model_list:
       model: openai/claude-3-5-haiku-20241022
       api_base: os.environ/SONNET_API_BASE_CUSTOM
       api_key: os.environ/SONNET_API_KEY_CUSTOM
+      timeout: 60
+      num_retries: 2
+      rpm: 60
+      tpm: 60000
+
+  - model_name: Kimi-K2-Instruct
+    litellm_params:
+      model: openai/moonshotai/Kimi-K2-Instruct
+      api_base: os.environ/FEATHERLESS_API_BASE_CUSTOM
+      api_key: os.environ/FEATHERLESS_API_KEY_CUSTOM
       timeout: 60
       num_retries: 2
       rpm: 60
