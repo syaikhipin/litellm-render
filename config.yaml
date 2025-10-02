@@ -1,10 +1,10 @@
 model_list:
   # Updated model list
-  - model_name: DeepSeek-R1-0528
+  - model_name: qwen3-vl-plus
     litellm_params:
-      model: openai/deepseek-ai/DeepSeek-R1-0528
-      api_base: os.environ/FEATHERLESS_API_BASE_CUSTOM
-      api_key: os.environ/FEATHERLESS_API_KEY_CUSTOM
+      model: openai/qwen3-vl-plus
+      api_base: os.environ/IFLOW_API_BASE_CUSTOM
+      api_key: os.environ/IFLOW_API_KEY_CUSTOM
   
   - model_name: claude-sonnet-4-5
     litellm_params:
@@ -24,11 +24,11 @@ model_list:
       api_base: os.environ/SONNET_API_BASE_CUSTOM
       api_key: os.environ/SONNET_API_KEY_CUSTOM
 
-  - model_name: Kimi-K2-Instruct
+  - model_name: Kimi-K2-Instruct-0905
     litellm_params:
-      model: openai/moonshotai/Kimi-K2-Instruct
-      api_base: os.environ/FEATHERLESS_API_BASE_CUSTOM
-      api_key: os.environ/FEATHERLESS_API_KEY_CUSTOM
+      model: openai/Kimi-K2-Instruct-0905
+      api_base: os.environ/IFLOW_API_BASE_CUSTOM
+      api_key: os.environ/IFLOW_API_KEY_CUSTOM
       
   - model_name: glm-4.5
     litellm_params:
@@ -36,9 +36,9 @@ model_list:
       api_base: os.environ/IFLOW_API_BASE_CUSTOM
       api_key: os.environ/IFLOW_API_KEY_CUSTOM
 
-  - model_name: qwen3-max-preview
+  - model_name: qwen3-max
     litellm_params:
-      model: openai/qwen3-max-preview
+      model: openai/qwen3-max
       api_base: os.environ/IFLOW_API_BASE_CUSTOM
       api_key: os.environ/IFLOW_API_KEY_CUSTOM
 
