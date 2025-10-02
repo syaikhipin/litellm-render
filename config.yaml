@@ -6,9 +6,9 @@ model_list:
       api_base: os.environ/FEATHERLESS_API_BASE_CUSTOM
       api_key: os.environ/FEATHERLESS_API_KEY_CUSTOM
   
-  - model_name: claude-sonnet-4-20250514
+  - model_name: claude-sonnet-4-5
     litellm_params:
-      model: openai/claude-sonnet-4-20250514
+      model: openai/claude-sonnet-4-5
       api_base: os.environ/SONNET_API_BASE_CUSTOM
       api_key: os.environ/SONNET_API_KEY_CUSTOM
       
