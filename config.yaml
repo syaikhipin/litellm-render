@@ -47,3 +47,9 @@ model_list:
       model: openai/deepseek-v3.1
       api_base: os.environ/IFLOW_API_BASE_CUSTOM
       api_key: os.environ/IFLOW_API_KEY_CUSTOM
+
+  - model_name: gemini-2.5-pro
+    litellm_params:
+      model: openai/gemini-2.5-pro
+      api_base: os.environ/GEMINI_API_BASE_CUSTOM
+      api_key: os.environ/GEMINI_API_KEY_CUSTOM
