@@ -1,55 +1,88 @@
 model_list:
   # Updated model list
-  - model_name: qwen3-vl-plus
+  - model_name: Qwen/Qwen3-VL-235B-A22B-Thinking
     litellm_params:
-      model: openai/qwen3-vl-plus
-      api_base: os.environ/IFLOW_API_BASE_CUSTOM
-      api_key: os.environ/IFLOW_API_KEY_CUSTOM
-  
-  - model_name: claude-sonnet-4-5
-    litellm_params:
-      model: openai/claude-sonnet-4-5
-      api_base: os.environ/SONNET_API_BASE_CUSTOM
-      api_key: os.environ/SONNET_API_KEY_CUSTOM
-      
-  - model_name: claude-opus-4-1-20250805
-    litellm_params:
-      model: openai/claude-opus-4-1-20250805
-      api_base: os.environ/SONNET_API_BASE_CUSTOM
-      api_key: os.environ/SONNET_API_KEY_CUSTOM
+      model: openai/Qwen/Qwen3-VL-235B-A22B-Thinking
+      api_base: os.environ/IPIN_API_BASE_CUSTOM
+      api_key: os.environ/IPIN_API_KEY_CUSTOM
 
-  - model_name: claude-3-5-haiku-20241022
+  - model_name: Qwen/Qwen2.5-VL-72B-Instruct
     litellm_params:
-      model: openai/claude-3-5-haiku-20241022
-      api_base: os.environ/SONNET_API_BASE_CUSTOM
-      api_key: os.environ/SONNET_API_KEY_CUSTOM
+      model: openai/Qwen/Qwen2.5-VL-72B-Instruct
+      api_base: os.environ/IPIN_API_BASE_CUSTOM
+      api_key: os.environ/IPIN_API_KEY_CUSTOM
 
-  - model_name: Kimi-K2-Instruct-0905
+  - model_name: OpenGVLab/InternVL3-78B
     litellm_params:
-      model: openai/Kimi-K2-Instruct-0905
-      api_base: os.environ/IFLOW_API_BASE_CUSTOM
-      api_key: os.environ/IFLOW_API_KEY_CUSTOM
-      
-  - model_name: glm-4.5
-    litellm_params:
-      model: openai/glm-4.5
-      api_base: os.environ/IFLOW_API_BASE_CUSTOM
-      api_key: os.environ/IFLOW_API_KEY_CUSTOM
+      model: openai/OpenGVLab/InternVL3-78B
+      api_base: os.environ/IPIN_API_BASE_CUSTOM
+      api_key: os.environ/IPIN_API_KEY_CUSTOM
 
-  - model_name: qwen3-max
+  - model_name: MiniMaxAI/MiniMax-M2
     litellm_params:
-      model: openai/qwen3-max
-      api_base: os.environ/IFLOW_API_BASE_CUSTOM
-      api_key: os.environ/IFLOW_API_KEY_CUSTOM
-
-  - model_name: deepseek-v3.1
-    litellm_params:
-      model: openai/deepseek-v3.1
-      api_base: os.environ/IFLOW_API_BASE_CUSTOM
-      api_key: os.environ/IFLOW_API_KEY_CUSTOM
+      model: openai/MiniMaxAI/MiniMax-M2
+      api_base: os.environ/IPIN_API_BASE_CUSTOM
+      api_key: os.environ/IPIN_API_KEY_CUSTOM
 
   - model_name: gemini-2.5-pro
     litellm_params:
       model: openai/gemini-2.5-pro
-      api_base: os.environ/GEMINI_API_BASE_CUSTOM
-      api_key: os.environ/GEMINI_API_KEY_CUSTOM
+      api_base: os.environ/IPIN_API_BASE_CUSTOM
+      api_key: os.environ/IPIN_API_KEY_CUSTOM
+
+  - model_name: MiniMaxAI/MiniMax-M2
+    litellm_params:
+      model: openai/MiniMaxAI/MiniMax-M2
+      api_base: os.environ/IPIN_API_BASE_CUSTOM
+      api_key: os.environ/IPIN_API_KEY_CUSTOM
+
+  - model_name: deepseek-ai/DeepSeek-V3.1
+    litellm_params:
+      model: openai/deepseek-ai/DeepSeek-V3.1
+      api_base: os.environ/IPIN_API_BASE_CUSTOM
+      api_key: os.environ/IPIN_API_KEY_CUSTOM
+
+  - model_name: deepseek-ai/DeepSeek-R1-0528
+    litellm_params:
+      model: openai/deepseek-ai/DeepSeek-R1-0528
+      api_base: os.environ/IPIN_API_BASE_CUSTOM
+      api_key: os.environ/IPIN_API_KEY_CUSTOM
+
+  - model_name: claude-sonnet-4-5
+    litellm_params:
+      model: openai/claude-sonnet-4-5
+      api_base: os.environ/IPIN_API_BASE_CUSTOM
+      api_key: os.environ/IPIN_API_KEY_CUSTOM
+
+  - model_name: zai-org/GLM-4.6
+    litellm_params:
+      model: openai/zai-org/GLM-4.6
+      api_base: os.environ/IPIN_API_BASE_CUSTOM
+      api_key: os.environ/IPIN_API_KEY_CUSTOM
+
+  - model_name: deepseek-ai/DeepSeek-V3.2-Exp
+    litellm_params:
+      model: openai/deepseek-ai/DeepSeek-V3.2-Exp
+      api_base: os.environ/IPIN_API_BASE_CUSTOM
+      api_key: os.environ/IPIN_API_KEY_CUSTOM
+
+  - model_name: deepseek-ai/DeepSeek-OCR
+    litellm_params:
+      model: openai/deepseek-ai/DeepSeek-OCR
+      api_base: os.environ/IPIN_API_BASE_CUSTOM
+      api_key: os.environ/IPIN_API_KEY_CUSTOM
+
+  - model_name: moonshotai/Kimi-K2-Thinking
+    litellm_params:
+      model: openai/moonshotai/Kimi-K2-Thinking
+      api_base: os.environ/IPIN_API_BASE_CUSTOM
+      api_key: os.environ/IPIN_API_KEY_CUSTOM
+
+  # Updated model for audio transcription
+  - model_name: FunAudioLLM/SenseVoiceSmall
+    litellm_params:
+      model: openai/FunAudioLLM/SenseVoiceSmall
+      api_base: os.environ/IPIN_API_BASE_CUSTOM
+      api_key: os.environ/IPIN_API_KEY_CUSTOM
+    model_info:
+      mode: audio_transcription
